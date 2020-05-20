@@ -1,40 +1,24 @@
+#TASK
+
+#Given the participants' score sheet for your University Sports Day,
+#you are required to find the runner-up score. You are given n scores.
+#Store them in a list and find the score of the runner-up.
+
+#Input Format
+
+#The first line contains n. The second line contains an array A[] of n integers each separated by a space.
+
+
+
+#CODE
+
 import math
 import os
 import random
 import re
 import sys
 
-
-"""n = input("enter the  number: ")
-n = int(n)
-
-if n % 2 != 0:
-	print("Weird")
-else:
-	if n > 2 and n < 5:
-		print("Not Weird")
-	elif n > 6 and n < 20:
-		print("Weird")
-	elif n > 20:
-		print("Not Weird")"""
-
-"""n = input("enter the number: ")
-n = int(n)
-for i in range(1,n+1):
-    print(i, end = "")"""
-
-"""x = input("raw_input1: ")
-x = int(x)
-y = input("raw_input2: ")
-y = int(y) 
-z = input("raw_input3: ")
-z = int(z)
-n = input("raw_input4: ")
-n = int(n)
-
-print([[a,b,c] for a in range(0,x+1) for b in range(0,y+1) for c in range(0,z+1) if a + b + c != n])"""
-
-k = input()
+k = input()                #provide the input scores with a space between each....remember k is a string here with spaces.
 arr = []
 arr = k.split(" ")
 print(arr)
@@ -45,3 +29,5 @@ for i in range(n):
 	if large == max(arr):
 		arr.remove(max(arr))
 print(max(arr))
+
+#ENJOY
